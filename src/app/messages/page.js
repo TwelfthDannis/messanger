@@ -3,7 +3,7 @@ import Image from "next/image";
 import avatar from "../1.webp"
 import BurgerMenu from "@/app/main/burgerMenu"
 import Menu from "@/app/main/(menu)/page"
-import useOpenMenu from "@/app/(element)/(api)/api";
+import useOpenMenu from "@/app/(api)/api";
 
 export default function Page() {
     const {openMenu, handleOpenMenu} = useOpenMenu()

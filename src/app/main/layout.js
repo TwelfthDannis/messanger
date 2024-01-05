@@ -1,8 +1,8 @@
 "use client"
-import BurgerMenu from "@/app/(element)/main/burgerMenu";
-import useOpenMenu from "@/app/(element)/(api)/api";
+import BurgerMenu from "@/app/main/burgerMenu";
+import useOpenMenu from "@/app/(api)/api";
 import Menu from "@/app/main/(menu)/page"
-import Chats from "@/app/(element)/chat/page"
+import Chats from "@/app/chat/page"
 import Messages from "../messages/page"
 import Widgets from "../widget/page"
 
@@ -30,7 +30,3 @@ export default function Layout() {
         </>
     )
 }
-/*
-<div className="lg:grid grid-cols-3 w-full hidden">
-    <Chats/>
-</div>*/
