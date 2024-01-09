@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
 import avatar from "../1.webp"
-import BurgerMenu from "@/app/main/burgerMenu"
-import Menu from "@/app/main/(menu)/page"
+import BurgerMenu from "@/app/home/burgerMenu"
+import Menu from "@/app/home/(menu)/page"
 import useOpenMenu from "@/app/(api)/api";
 
 export default function Page() {

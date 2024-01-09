@@ -1,7 +1,7 @@
 "use client"
-import BurgerMenu from "@/app/main/burgerMenu";
+import BurgerMenu from "@/app/home/burgerMenu";
 import useOpenMenu from "@/app/(api)/api";
-import Menu from "@/app/main/(menu)/page"
+import Menu from "@/app/home/(menu)/page"
 import Chats from "@/app/chat/page"
 import Messages from "../messages/page"
 import Widgets from "../widget/page"
