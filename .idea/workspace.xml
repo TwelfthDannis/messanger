@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/auth/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/lib/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/lib/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/loading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/messages/messages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/no-avatar.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(api)/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(api)/sign.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(sign)/login/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(sign)/login/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(sign)/register/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(sign)/register/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(sign)/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(sign)/sign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/(menu)/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/(menu)/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/burgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/burgerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -38,6 +64,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -52,8 +81,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;deploy&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/danya/Desktop/job/messanger&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -63,9 +94,15 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\danya\\Desktop\\job\\messanger\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;,
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -73,11 +110,11 @@
       <recent name="C:\Users\danya\Desktop\job\messanger\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\main" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\api\auth" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\api\auth\[...nextauth]" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\lib" />
       <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(element)" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\element" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\home" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\main" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,6 +153,17 @@
       <workItem from="1704470415316" duration="2498000" />
       <workItem from="1704708816563" duration="1200000" />
       <workItem from="1704718163250" duration="38000" />
+      <workItem from="1704803848404" duration="34411000" />
+      <workItem from="1704869201642" duration="5189000" />
+      <workItem from="1704883095790" duration="2094000" />
+      <workItem from="1704887390160" duration="629000" />
+      <workItem from="1704952930799" duration="15531000" />
+      <workItem from="1704969508668" duration="9891000" />
+      <workItem from="1704984635980" duration="28000" />
+      <workItem from="1704984695233" duration="344000" />
+      <workItem from="1704985068932" duration="6922000" />
+      <workItem from="1705000315300" duration="8451000" />
+      <workItem from="1705038466100" duration="17045000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -149,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704472249507</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1704803972101</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704803972101</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,0 +1,9 @@
+.messageAnother{
+    order: 0;
+    margin-right: .375rem;
+}
+.messageMe{
+    order: 1;
+    margin-left: .375rem;
+}
+

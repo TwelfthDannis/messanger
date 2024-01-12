@@ -1,23 +1,20 @@
 "use client"
 import Image from "next/image";
-import avatar from "../1.webp"
-import BurgerMenu from "@/app/home/burgerMenu"
-import Menu from "@/app/home/(menu)/page"
-import useOpenMenu from "@/app/(api)/api";
+import avatar from "../no-avatar.webp"
+import BurgerMenu from "../home/burgerMenu"
+import Menu from "../home/(menu)/page"
+import "./messages.css"
 
-export default function Page() {
-    const {openMenu, handleOpenMenu} = useOpenMenu()
+export default function Page({openMenu, handleOpenMenu}) {
+
     return (
-        <div className="fixed lg:relative w-full lg:p-4">
-            <div className="flex flex-col  overflow-hidden h-dvh lg:h-full lg:bg-zinc-950 lg:bg-opacity-60 lg:rounded-xl">
+        <div className="lg:relative w-full lg:p-4">
+            <div className="overflow-hidden flex flex-col h-dvh lg:h-full lg:bg-zinc-950 lg:bg-opacity-60 lg:rounded-xl">
                 <div className="lg:hidden">
                     <Menu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
                 </div>
-                <div
-                    className="relative h-14 bg-zinc-950 border-b-zinc-950 border-opacity-50 flex py-2 items-center rounded-lg">
-                    <div className="absolute left-0">
-                        <BurgerMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
-                    </div>
+                <div className="border-b border-zinc-800 h-14 bg-zinc-950 flex py-2 items-center rounded-t-xl">
+                    <BurgerMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
                     <div className="flex w-full justify-center items-center">
                         <Image
                             className="w-8 h-8 mr-2.5 text-center rounded-full ring-2 ring-gray-300 object-cover"
@@ -27,7 +24,7 @@ export default function Page() {
                             <span className="font-bold text-xs text-zinc-500">last active</span>
                         </div>
                     </div>
-                    <button className="p-2 m-2 absolute right-0">
+                    <button className="p-2 m-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                              stroke="currentColor" className="w-6 h-6 text-gray-300 ">
                             <path strokeLinecap="round" strokeLinejoin="round"
@@ -35,15 +32,18 @@ export default function Page() {
                         </svg>
                     </button>
                 </div>
-                <div
-                    className="space-y-2 px-4 flex flex-1 flex-col text-violet-600 h-full overflow-hidden overflow-y-auto pb-6 scroll-smooth">
-                    <ul className="">
-                        <li className="">q</li>
-                    </ul>
-                </div>
+                <ul className="space-y-2 px-4 flex flex-1 flex-col text-violet-600 overflow-hidden overflow-y-auto py-3 scroll-smooth">
+                    <li className="flex items-start w-full">
+                        <Image className="h-6 w-6 object-cover rounded-full messageAnother" src={avatar}
+                               alt={"avatar"}/>
+                        <div className="overflow-hidden break-words bg-zinc-900 p-2 rounded-xl text-sm">
+                            qqqqqqqqqqqqqqq
+                        </div>
+                    </li>
+                </ul>
                 <form>
                     <div
-                        className="flex items-center px-2 py-2 bottom-0 bg-zinc-900 lg:rounded-full border-t border-zinc-800 ">
+                        className="flex items-center px-2 py-2 bottom-0 bg-zinc-900 border-t border-zinc-800 ">
                         <button type="button"
                                 className="p-2 text-gray-500 rounded-lg cursor-pointer">
                             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"

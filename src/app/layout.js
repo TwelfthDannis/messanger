@@ -9,9 +9,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body>
-        <main>
-            {children}
-        </main>
+        {children}
         <div className="bg-circle-1"/>
         <div className="bg-circle-2"/>
         </body>

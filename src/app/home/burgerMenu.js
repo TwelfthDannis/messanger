@@ -1,4 +1,4 @@
-"use client"
+
 export default function BurgerMenu({handleOpenMenu}){
     return (
         <div className="lg:hidden bg-zinc-950">

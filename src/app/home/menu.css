@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .linkMenu{
-    @apply flex items-center p-2 text-gray-300 rounded-lg
+    @apply flex items-center p-2 text-gray-300 rounded-lg hover:bg-gray-300 hover:text-violet-600 transition
 }
 .spanMenu{
     @apply ms-3 lg:hidden

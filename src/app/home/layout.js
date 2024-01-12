@@ -1,32 +1,38 @@
 "use client"
-import BurgerMenu from "@/app/home/burgerMenu";
-import useOpenMenu from "@/app/(api)/api";
-import Menu from "@/app/home/(menu)/page"
-import Chats from "@/app/chat/page"
-import Messages from "../messages/page"
-import Widgets from "../widget/page"
+import BurgerMenu from "./burgerMenu";
+import useOpenMenu from "../api/function";
+import Menu from "./(menu)/page";
+import Chats from "../chat/page";
+import Messages from "../messages/page";
+import Widgets from "../widget/page";
 
 export default function Layout() {
     const {openMenu, handleOpenMenu} = useOpenMenu()
 
     return (
         <>
-            <div className="border-b border-zinc-900">
-                <BurgerMenu handleOpenMenu={handleOpenMenu}/>
-            </div>
-            <div className="lg:hidden">
-                <Chats/>
-            </div>
-            <div className="container lg:h-full m-auto flex items-center ">
-                <div className="bg-zinc-900 rounded-3xl bg-opacity-60 overflow-hidden lg:h-3/4 lg:w-full lg:flex ">
+            <header>
+                <div className="border-b border-zinc-900">
+                    <BurgerMenu handleOpenMenu={handleOpenMenu}/>
+                </div>
+            </header>
+            <main>
+                <div className="lg:hidden">
                     <Menu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
-                    <div className="lg:grid grid-cols-3 w-full hidden">
-                        <Chats/>
-                        <Messages/>
-                        <Widgets/>
+                    <Chats/>
+                </div>
+                <div className="h-dvh lg:flex hidden ">
+                    <div className="overflow-hidden bg-zinc-900 bg-opacity-60 container m-auto h-3/4 rounded-3xl lg:flex">
+                        <Menu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
+                        <div className="lg:grid lg:grid-cols-3 w-full gap-4">
+                            <Chats/>
+                            <Messages/>
+                            <Widgets/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }
+
