@@ -1,5 +1,5 @@
 
-export default function BurgerMenu({handleOpenMenu}){
+export default function BtnMenu({handleOpenMenu}){
     return (
         <div className="lg:hidden bg-zinc-950">
             <button type="button" className="p-2 m-2 text-sm rounded-lg" onClick={handleOpenMenu}>

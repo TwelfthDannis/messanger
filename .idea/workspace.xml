@@ -5,33 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/auth/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/messages/messages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/no-avatar.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(main)/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/NotSelected.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Providers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/no-avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b57ab33c-527b-4fe0-a88c-cb2f95fc6011.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b57ab33c-527b-4fe0-a88c-cb2f95fc6011/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b57ab33c-527b-4fe0-a88c-cb2f95fc6011/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b57ab33c-527b-4fe0-a88c-cb2f95fc6011/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b57ab33c-527b-4fe0-a88c-cb2f95fc6011/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(api)/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(api)/sign.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(sign)/login/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(sign)/login/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(sign)/register/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(sign)/register/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(sign)/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(sign)/sign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(sign)/login/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(authen)/log/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(sign)/register/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(authen)/reg/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(sign)/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(authen)/sign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/function.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/Chat/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/(menu)/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/(menu)/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/burgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/burgerMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/(menu)/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/burgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/BtnMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/Messages/messages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/Messages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/no-avatar.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/widget/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(main)/widget/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +67,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TwelfthDannis&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9e785298-5671-4be7-85b8-facf746e1538" />
+        <option name="url" value="https://github.com/TwelfthDannis/messanger.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -78,43 +98,43 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;deploy&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danya/Desktop/job/messanger&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\danya\\Desktop\\job\\messanger\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "deploy",
+    "last_opened_file_path": "C:/Users/danya/Desktop/job/messanger",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "ts.external.directory.path": "C:\\Users\\danya\\Desktop\\job\\messanger\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;,
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
       <recent name="C:\Users\danya\Desktop\job\messanger\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\api\auth" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\api\auth\[...nextauth]" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\lib" />
       <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\main" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(main)" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(main)\Chat" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(authen)" />
     </key>
   </component>
   <component name="RunManager">
@@ -163,7 +183,14 @@
       <workItem from="1704984695233" duration="344000" />
       <workItem from="1704985068932" duration="6922000" />
       <workItem from="1705000315300" duration="8451000" />
-      <workItem from="1705038466100" duration="17045000" />
+      <workItem from="1705038466100" duration="37152000" />
+      <workItem from="1705085535937" duration="32000" />
+      <workItem from="1705086839191" duration="56000" />
+      <workItem from="1705087267262" duration="8411000" />
+      <workItem from="1705138201505" duration="41000" />
+      <workItem from="1705138272607" duration="236000" />
+      <workItem from="1705155263716" duration="9120000" />
+      <workItem from="1705305529647" duration="39562000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -205,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704803972101</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1705064907574</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705064907574</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

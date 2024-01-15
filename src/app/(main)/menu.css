@@ -8,3 +8,6 @@
 .spanMenu{
     @apply ms-3 lg:hidden
 }
+.ActiveBtn{
+    @apply bg-gray-300 text-violet-600
+}

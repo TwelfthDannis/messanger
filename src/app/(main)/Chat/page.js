@@ -1,16 +1,13 @@
 "use client"
 import Image from "next/image";
-import avatarImage from '../no-avatar.webp';
-import {useState} from "react";
+import { useState} from "react";
+import avatarImage from "../../no-avatar.jpg";
 
 export default function Page() {
-
     const [searchQuery, setSearchQuery] = useState('');
-
     const handleSearch = (e) => {
         setSearchQuery(e.target.value);
     }
-
     const accountMes = [
         {
             avatar: avatarImage,
@@ -25,8 +22,8 @@ export default function Page() {
             lastTimeMessage: "7:21PM"
         },
     ]
-
     const filteredMessages = searchQuery ? accountMes.filter(({name}) => name.toLowerCase().includes(searchQuery.toLowerCase())) : accountMes;
+
 
     return (
         <div className="flex flex-col flex-1 overflow-hidden p-4">
@@ -78,7 +75,8 @@ export default function Page() {
                                         <span className="truncate text-gray-300">{lastMessage}</span>
                                     </div>
                                 </div>
-                                <div className="mb-auto text-zinc-500 right-0 whitespace-nowrap">{lastTimeMessage}</div>
+                                <div
+                                    className="mb-auto text-zinc-500 right-0 whitespace-nowrap">{lastTimeMessage}</div>
                             </div>
                         </li>
                     ))}

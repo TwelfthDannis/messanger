@@ -1,20 +1,13 @@
 "use client"
 import Image from "next/image";
-import avatar from "../no-avatar.webp"
-import BurgerMenu from "../home/burgerMenu"
-import Menu from "../home/(menu)/page"
+import avatar from "../../no-avatar.jpg"
 import "./messages.css"
 
-export default function Page({openMenu, handleOpenMenu}) {
-
+export default function Page() {
     return (
-        <div className="lg:relative w-full lg:p-4">
+        <div className="lg:relative w-full">
             <div className="overflow-hidden flex flex-col h-dvh lg:h-full lg:bg-zinc-950 lg:bg-opacity-60 lg:rounded-xl">
-                <div className="lg:hidden">
-                    <Menu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
-                </div>
                 <div className="border-b border-zinc-800 h-14 bg-zinc-950 flex py-2 items-center rounded-t-xl">
-                    <BurgerMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
                     <div className="flex w-full justify-center items-center">
                         <Image
                             className="w-8 h-8 mr-2.5 text-center rounded-full ring-2 ring-gray-300 object-cover"

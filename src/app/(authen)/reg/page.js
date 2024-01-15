@@ -1,10 +1,12 @@
 "use client"
 import "../sign.css"
-import {useState} from "react";
 import axios from "axios";
+import {useState} from "react";
+import {useRouter} from "next/navigation";
 
 
 export default function Page() {
+    const router = useRouter();
 
     const [data, setData] = useState({
         email: "",
@@ -26,13 +28,13 @@ export default function Page() {
 
     const ButtonEye = ({field}) => {
         const handleShowPassword = (field) => {
-            setShowPassword((prev)=>({
+            setShowPassword((prev) => ({
                 ...prev,
-                [field]:!prev[field]
+                [field]: !prev[field]
             }))
         }
         return (
-            <button className="absolute h-full top-0 p-2 right-0" onClick={()=>handleShowPassword(field)}>
+            <button className="absolute h-full top-0 p-2 right-0" onClick={() => handleShowPassword(field)}>
                 {!showPassword[field] ? (
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
                          className="w-6 h-6 text-gray-300 ">
@@ -51,18 +53,23 @@ export default function Page() {
         );
     };
 
-    const handleSumbit=async ()=>{
-        const response = await axios.post("/api/auth",data,{
-            headers:{
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const response = await axios.post("/api/auth", data, {
+            headers: {
                 "Content-Type": "application/json"
             }
-        })
+        });
+        if (response.status === 201) {
+            router.push("/log")
+        }
     }
 
     return (
         <div className="container m-auto h-full flex justify-center items-center">
-            <form className="max-w-sm mx-auto" onSubmit={handleSumbit}>
-                <a href="/public"><h1 className="font-bold text-4xl text-center my-4 text-gray-300 w-60">ty~Chat</h1>
+            <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
+                <a href="/"><h1 className="font-bold text-4xl text-center my-4 text-gray-300 w-60">ty~Chat</h1>
                 </a>
                 <div className="mb-5">
                     <label htmlFor="email" className="LabelInput">Email</label>
@@ -93,18 +100,17 @@ export default function Page() {
                         <ButtonEye field={"password"}/>
                     </div>
                 </div>
-                <div className="mb-5">
+                {/*                <div className="mb-5">
                     <label htmlFor="repeat-password" className="LabelInput">Repeat password</label>
                     <div className="relative">
                         <input type={showPassword.repeatPassword ? "text" : "password"} id="repeat-password"
                                name="repeatPassword"
                                autoComplete="off"
                                className="InputPassword"
-                               onChange={handleData}
                                required/>
                         <ButtonEye field={"repeatPassword"}/>
                     </div>
-                </div>
+                </div>*/}
                 <div className="flex items-start mb-5">
                     <div className="flex items-center h-5">
                         <input id="terms" type="checkbox" value=""

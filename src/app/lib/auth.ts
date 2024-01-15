@@ -1,5 +1,5 @@
 import CredentialsProvider from "next-auth/providers/credentials"
-import {NextAuthOptions} from "next-auth";
+import NextAuth, {NextAuthOptions} from "next-auth";
 import {PrismaAdapter} from "@next-auth/prisma-adapter";
 import {prisma} from "./db";
 import {compare} from "bcrypt";
@@ -8,10 +8,14 @@ export const authOptions:NextAuthOptions={
     adapter: PrismaAdapter(prisma),
     secret: process.env.NEXTAUTH_SECRET,
     session:{
-        strategy :"jwt"
+        strategy :"jwt",
+        maxAge: 60*60,
+        updateAge:24*60*60
     },
     pages:{
-      signIn:"/login"
+        signIn:"/log",
+        signOut:"/logout",
+        error:"/"
     },
     providers:[
         CredentialsProvider({
@@ -37,10 +41,18 @@ export const authOptions:NextAuthOptions={
                 }
                 return {
                     id: `${existingUser.id}`,
-                    username:existingUser.username,
-                    email:existingUser.email
+                    name:existingUser.username,
+                    email:existingUser.email,
                 }
             }
         })
-    ]
+    ],
+    debug:true,
+    callbacks: {
+        async jwt({token,user}){
+            return ({...token,...user})
+        }
+    }
 }
+
+export default NextAuth(authOptions)

@@ -1,22 +1,25 @@
-"use client"
-import avatar from "../../no-avatar.webp"
+import NoAvatar from "../no-avatar.jpg"
 import Image from "next/image";
-import "../menu.css"
+import "./menu.css"
+import {usePathname} from "next/navigation";
+import {signOut} from "next-auth/react";
 
-export default function Page({openMenu, handleOpenMenu}) {
+export default function Menu() {
     const menuItems = ["Chat","Setting"]
+    const pathname=usePathname().split('/').pop();
+
 
     return (
-        <aside className={`absolute flex top-0 left-0 z-40 w-screen h-dvh transition-transform ${openMenu ? "translate-x-0" : "-translate-x-full "} lg:translate-x-0 lg:relative lg:h-full lg:w-auto`}>
+        <aside className={`absolute flex top-0 left-0 z-40 w-screen h-dvh transition-transform lg:translate-x-0 lg:relative lg:h-full lg:w-auto`}>
             <div className="h-full mr-2 px-3 py-4 bg-zinc-950 w-48 border-r border-zinc-800 flex flex-col justify-between lg:w-auto">
                 <a href="#" className="flex items-center p-2 text-gray-300">
-                    <Image className="w-6 h-6 rounded-full object-cover" src={avatar} alt="Avatar"/>
+                    <Image className="w-6 h-6 rounded-full object-cover" src={NoAvatar} alt="Avatar"/>
                     <span className="ms-3 lg:hidden">Name</span>
                 </a>
                 <ul className="space-y-2 font-medium">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <button className="linkMenu">
+                            <button className={`${pathname===item? "ActiveBtn linkMenu" : "linkMenu"}`} disabled={pathname===item}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox=" 0 0 24 24" strokeWidth="2"
                                      stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -39,14 +42,14 @@ export default function Page({openMenu, handleOpenMenu}) {
                         </li>
                     ))}
                 </ul>
-                <a href="#" className="linkMenu">
+                <button className="linkMenu"  onClick={()=>signOut({callbackUrl:"/"})}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/>
                     </svg>
                     <span className="spanMenu">Logout</span>
-                </a>
+                </button>
             </div>
-            <div className="flex flex-1 lg:hidden" onClick={handleOpenMenu}></div>
+            <div className="flex flex-1 lg:hidden"></div>
         </aside>
     )
 }

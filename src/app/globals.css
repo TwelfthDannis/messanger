@@ -5,14 +5,10 @@
 
 :root{
     --bg-dark:#0b0b0b;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100dvh;
     background: #000000;
 }
+
+
 button{
     margin:0;
     padding: 0;
@@ -21,9 +17,7 @@ button{
 ::-ms-reveal{
     display: none;
 }
-::-webkit-scrollbar{
-    display: none;
-}
+
 .bg-circle-1{
     position: absolute;
     box-shadow: 0 0 45vw 15vw #8600ab;
