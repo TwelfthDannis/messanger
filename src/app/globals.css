@@ -8,6 +8,10 @@
     background: #000000;
 }
 
+main{
+    height: 100dvh;
+}
+
 
 button{
     margin:0;
