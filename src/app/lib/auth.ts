@@ -6,7 +6,7 @@ import {compare} from "bcrypt";
 
 export const authOptions:NextAuthOptions={
     adapter: PrismaAdapter(prisma),
-    secret: process.env.NEXTAUTH_SECRET,
+    secret: process.env.NEXT_PUBLIC_SECRET,
     session:{
         strategy :"jwt",
         maxAge: 60*60,
