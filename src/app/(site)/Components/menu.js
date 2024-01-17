@@ -1,12 +1,13 @@
-import NoAvatar from "../no-avatar.jpg"
+"use client"
+import NoAvatar from "../../../../public/no-avatar.jpg"
 import Image from "next/image";
-import "./menu.css"
+import "@/app/style/menu.css"
 import {usePathname} from "next/navigation";
 import {signOut} from "next-auth/react";
 
-export default function Menu() {
+ const Header=()=>{
     const menuItems = ["Chat","Setting"]
-    const pathname=usePathname().split('/').pop();
+    const pathname=usePathname().split('/')[1];
 
 
     return (
@@ -19,7 +20,7 @@ export default function Menu() {
                 <ul className="space-y-2 font-medium">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <button className={`${pathname===item? "ActiveBtn linkMenu" : "linkMenu"}`} disabled={pathname===item}>
+                            <button className={`${pathname===item.toLowerCase() ? "ActiveBtn linkMenu" : "linkMenu"}`} disabled={pathname===item.toLowerCase()}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox=" 0 0 24 24" strokeWidth="2"
                                      stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -53,3 +54,4 @@ export default function Menu() {
         </aside>
     )
 }
+export default Header

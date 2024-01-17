@@ -1,5 +1,6 @@
-import "./globals.css"
-import {Providers} from "./components/Providers";
+import "./style/globals.css"
+import {Providers} from "./lib/providers";
+import Header from "@/app/(site)/Components/Header";
 
 export const metadata = {
     title: 'MessangerClone',
@@ -9,9 +10,16 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body>
-        <Providers>
-            {children}
-        </Providers>
+        <header>
+            <Header/>
+        </header>
+        <main>
+            <Providers>
+                <div className="h-full lg:h-dvh lg:flex lg:items-center lg:justify-center">
+                    {children}
+                </div>
+            </Providers>
+        </main>
         <div className="bg-circle-1"/>
         <div className="bg-circle-2"/>
         </body>

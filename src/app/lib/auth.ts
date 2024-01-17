@@ -26,19 +26,22 @@ export const authOptions:NextAuthOptions={
             },
             async authorize(credentials, req) {
                 if (!credentials?.email || !credentials?.password){
-                    return null;
+                    throw "Invalid credentials";
                 }
 
-                const existingUser= await prisma.users.findUnique({
-                    where:{email:credentials?.email}
+                const existingUser = await prisma.user.findUnique({
+                    where: {email: credentials?.email },
                 });
+
                 if(!existingUser){
-                    return null;
+                    throw "Invalid credentials";
                 }
+
                 const passwordMatch = await compare(credentials.password,existingUser.password)
                 if (!passwordMatch){
-                    return null;
+                    throw "Invalid credentials";
                 }
+
                 return {
                     id: `${existingUser.id}`,
                     name:existingUser.username,

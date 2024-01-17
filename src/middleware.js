@@ -7,10 +7,9 @@ export default async function middleware(req) {
         return NextResponse.next();
     }
 
-    const session = !!req.cookies.get("__Secure-next-auth.session-token")
+    const session = !!req.cookies.get("next-auth.session-token")
 
     const isProtected = path.includes('/Chat');
-    console.log(path)
 
     if (!session && isProtected) {
         return NextResponse.redirect(new URL('/', req.url));
@@ -21,5 +20,5 @@ export default async function middleware(req) {
 }
 
 export const config = {
-    matcher: ["/Chat","/log","/reg"]
+    matcher: []
 };

@@ -5,8 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/listChat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/searchChat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/NotSelected.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/log/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/auth/register/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(authen)/log/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(authen)/reg/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/reg/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(authen)/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/sign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/BtnMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/Chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/Messages/messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/messages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/Messages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/messages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(main)/widget/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/widget/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/NotSelected.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Providers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/providers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/no-avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/no-avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,11 +131,11 @@
       <recent name="C:\Users\danya\Desktop\job\messanger\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\(pages)\chat" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\(pages)" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\style" />
       <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(main)" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(main)\Chat" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(authen)" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,7 +192,10 @@
       <workItem from="1705138272607" duration="236000" />
       <workItem from="1705155263716" duration="9120000" />
       <workItem from="1705305529647" duration="42496000" />
-      <workItem from="1705393398993" duration="1156000" />
+      <workItem from="1705393398993" duration="12826000" />
+      <workItem from="1705412770244" duration="3607000" />
+      <workItem from="1705476273509" duration="11000" />
+      <workItem from="1705506601604" duration="22005000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -242,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705394076993</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1705394580943</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705394580943</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

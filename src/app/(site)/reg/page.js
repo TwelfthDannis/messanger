@@ -1,5 +1,5 @@
 "use client"
-import "../sign.css"
+import "@/app/style/sign.css"
 import axios from "axios";
 import {useState} from "react";
 import {useRouter} from "next/navigation";
@@ -56,7 +56,7 @@ export default function Page() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await axios.post("/api/auth", data, {
+        const response = await axios.post("/api/auth/register", data, {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -67,40 +67,39 @@ export default function Page() {
     }
 
     return (
-        <div className="container m-auto h-full flex justify-center items-center">
-            <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
-                <a href="/"><h1 className="font-bold text-4xl text-center my-4 text-gray-300 w-60">ty~Chat</h1>
-                </a>
-                <div className="mb-5">
-                    <label htmlFor="email" className="LabelInput">Email</label>
-                    <input type="email" id="email"
-                           name="email"
-                           className="InputSign"
-                           placeholder="Messanger@gmail.com"
+        <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
+            <a href="/public"><h1 className="font-bold text-4xl text-center my-4 text-gray-300 w-60">ty~Chat</h1>
+            </a>
+            <div className="mb-5">
+                <label htmlFor="email" className="LabelInput">Email</label>
+                <input type="email" id="email"
+                       name="email"
+                       className="InputSign"
+                       placeholder="Messanger@gmail.com"
+                       onChange={handleData}
+                       required/>
+            </div>
+            <div className="mb-5">
+                <label htmlFor="email" className="LabelInput">Username</label>
+                <input type="text" id="username"
+                       name="username"
+                       className="InputSign"
+                       onChange={handleData}
+                       required/>
+            </div>
+            <div className="mb-5">
+                <label htmlFor="password" className="LabelInput">Password</label>
+                <div className="relative">
+                    <input type={showPassword.password ? "text" : "password"} id="password"
+                           name="password"
+                           autoComplete="new Password"
+                           className="InputPassword"
                            onChange={handleData}
                            required/>
+                    <ButtonEye field={"password"}/>
                 </div>
-                <div className="mb-5">
-                    <label htmlFor="email" className="LabelInput">Username</label>
-                    <input type="text" id="username"
-                           name="username"
-                           className="InputSign"
-                           onChange={handleData}
-                           required/>
-                </div>
-                <div className="mb-5">
-                    <label htmlFor="password" className="LabelInput">Password</label>
-                    <div className="relative">
-                        <input type={showPassword.password ? "text" : "password"} id="password"
-                               name="password"
-                               autoComplete="new Password"
-                               className="InputPassword"
-                               onChange={handleData}
-                               required/>
-                        <ButtonEye field={"password"}/>
-                    </div>
-                </div>
-                {/*                <div className="mb-5">
+            </div>
+            {/*                <div className="mb-5">
                     <label htmlFor="repeat-password" className="LabelInput">Repeat password</label>
                     <div className="relative">
                         <input type={showPassword.repeatPassword ? "text" : "password"} id="repeat-password"
@@ -111,20 +110,19 @@ export default function Page() {
                         <ButtonEye field={"repeatPassword"}/>
                     </div>
                 </div>*/}
-                <div className="flex items-start mb-5">
-                    <div className="flex items-center h-5">
-                        <input id="terms" type="checkbox" value=""
-                               className="w-4 h-4 border border-gray-300 rounded bg-gray-50"
-                               required/>
-                    </div>
-                    <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-300">I agree with the <a
-                        href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and
-                        conditions</a></label>
+            <div className="flex items-start mb-5">
+                <div className="flex items-center h-5">
+                    <input id="terms" type="checkbox" value=""
+                           className="w-4 h-4 border border-gray-300 rounded bg-gray-50"
+                           required/>
                 </div>
-                <button type="submit" className="btnSubmitSign">
-                    Sign up
-                </button>
-            </form>
-        </div>
+                <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-300">I agree with the <a
+                    href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and
+                    conditions</a></label>
+            </div>
+            <button type="submit" className="btnSubmitSign">
+                Sign up
+            </button>
+        </form>
     )
 }

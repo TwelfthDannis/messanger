@@ -7,12 +7,9 @@
     --bg-dark:#0b0b0b;
     background: #000000;
 }
-
-main{
-    height: 100dvh;
+::-webkit-scrollbar{
+    width: 0;
 }
-
-
 button{
     margin:0;
     padding: 0;

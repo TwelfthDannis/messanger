@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
-import avatar from "../../no-avatar.jpg"
-import "./messages.css"
+import avatar from "../../../../../../public/no-avatar.jpg"
+import "@/app/style/messages.css"
 
 export default function Page() {
     return (
