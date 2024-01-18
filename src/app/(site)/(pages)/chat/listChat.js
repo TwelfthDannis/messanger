@@ -1,7 +1,11 @@
+
 import Image from "next/image";
 import avatarImage from "@/../public/no-avatar.jpg";
+import {useSession} from "next-auth/react";
 
 export default function ListChat() {
+    const {data:session} = useSession()
+    console.log(session)
     return (
         <li>
             <div className="bg-zinc-800 p-2.5 rounded-lg flex items-center text-sm transition ease-linear duration-150 lg:hover:bg-zinc-950 lg:bg-transparent">

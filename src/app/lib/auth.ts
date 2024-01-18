@@ -4,56 +4,53 @@ import {PrismaAdapter} from "@next-auth/prisma-adapter";
 import {prisma} from "./db";
 import {compare} from "bcrypt";
 
-export const authOptions:NextAuthOptions={
+export const authOptions: NextAuthOptions = {
     adapter: PrismaAdapter(prisma),
     secret: process.env.NEXT_PUBLIC_SECRET,
-    session:{
-        strategy :"jwt",
-        maxAge: 60*60,
-        updateAge:24*60*60
+    session: {
+        strategy: "jwt"
     },
-    pages:{
-        signIn:"/log",
-        signOut:"/logout",
-        error:"/"
+    pages: {
+        signIn: "/log",
+        signOut: "/logout",
+        error: "/"
     },
-    providers:[
+    providers: [
         CredentialsProvider({
             name: "Credentials",
             credentials: {
-                email: { label: "Email", type: "email", placeholder: "email@gmail.com" },
-                password: {  label: "Password", type: "password" }
+                email: {label: "Email", type: "email", placeholder: "email@gmail.com"},
+                password: {label: "Password", type: "password"}
             },
             async authorize(credentials, req) {
-                if (!credentials?.email || !credentials?.password){
+                if (!credentials?.email || !credentials?.password) {
                     throw "Invalid credentials";
                 }
 
-                const existingUser = await prisma.user.findUnique({
-                    where: {email: credentials?.email },
+                const existingUser = await prisma.user.findFirst({
+                    where: {email: credentials?.email},
                 });
 
-                if(!existingUser){
+                if (!existingUser || !(await compare(credentials.password, existingUser.password))) {
                     throw "Invalid credentials";
                 }
-
-                const passwordMatch = await compare(credentials.password,existingUser.password)
-                if (!passwordMatch){
-                    throw "Invalid credentials";
-                }
-
                 return {
                     id: `${existingUser.id}`,
-                    name:existingUser.username,
-                    email:existingUser.email,
+                    name: existingUser.username,
+                    email: existingUser.email,
                 }
             }
         })
     ],
-    debug:true,
+    debug: true,
     callbacks: {
-        async jwt({token,user}){
-            return ({...token,...user})
+        session({session, token, user}) {
+            session.user = token
+            return session
+        },
+        redirect({url,baseUrl}){
+            url="/chat"
+            return url
         }
     }
 }

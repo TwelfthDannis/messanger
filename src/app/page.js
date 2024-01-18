@@ -1,6 +1,7 @@
-const Page=()=> {
+export default function Page() {
     return (
-        <div className="container m-auto h-dvh flex justify-center items-center font-bold text-sm text-white uppercase">
+        <div
+            className="container m-auto h-dvh flex justify-center items-center font-bold text-sm text-white uppercase">
             <a href="/log" className="p-2.5 hover:underline w-20 text-center whitespace-nowrap">
                 Login
             </a>
@@ -11,4 +12,3 @@ const Page=()=> {
         </div>
     )
 }
-export default Page

@@ -1,26 +1,27 @@
-"use client"
 import NoAvatar from "../../../../public/no-avatar.jpg"
 import Image from "next/image";
 import "@/app/style/menu.css"
 import {usePathname} from "next/navigation";
-import {signOut} from "next-auth/react";
+import {signOut, useSession} from "next-auth/react";
 
- const Header=()=>{
-    const menuItems = ["Chat","Setting"]
-    const pathname=usePathname().split('/')[1];
 
+const Menu =({openMenu,handleOpenMenu}) => {
+    const menuItems = ["Chat", "Setting"]
+    const pathname = usePathname().split('/')[1];
+    const {data:session}=useSession()
 
     return (
-        <aside className={`absolute flex top-0 left-0 z-40 w-screen h-dvh transition-transform lg:translate-x-0 lg:relative lg:h-full lg:w-auto`}>
+        <aside className={`${openMenu ? "" : "-translate-x-full"} absolute flex top-0 left-0 z-40 w-screen h-dvh transition-transform lg:translate-x-0 lg:relative lg:h-full lg:w-auto`}>
             <div className="h-full mr-2 px-3 py-4 bg-zinc-950 w-48 border-r border-zinc-800 flex flex-col justify-between lg:w-auto">
                 <a href="#" className="flex items-center p-2 text-gray-300">
                     <Image className="w-6 h-6 rounded-full object-cover" src={NoAvatar} alt="Avatar"/>
-                    <span className="ms-3 lg:hidden">Name</span>
+                    <span className="ms-3 lg:hidden">{session?.user?.name}</span>
                 </a>
                 <ul className="space-y-2 font-medium">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <button className={`${pathname===item.toLowerCase() ? "ActiveBtn linkMenu" : "linkMenu"}`} disabled={pathname===item.toLowerCase()}>
+                            <button className={`${pathname === item.toLowerCase() ? "ActiveBtn linkMenu" : "linkMenu"}`}
+                                    disabled={pathname === item.toLowerCase()}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox=" 0 0 24 24" strokeWidth="2"
                                      stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -33,9 +34,9 @@ import {signOut} from "next-auth/react";
                                                           :
                                                           undefined
                                           }/>
-                                    {item==="Setting"&&
+                                    {item === "Setting" &&
                                         <path strokeLinecap="round" strokeLinejoin="round"
-                                          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     }
                                 </svg>
                                 <span className="spanMenu">{item}</span>
@@ -43,15 +44,17 @@ import {signOut} from "next-auth/react";
                         </li>
                     ))}
                 </ul>
-                <button className="linkMenu"  onClick={()=>signOut({callbackUrl:"/"})}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/>
+                <button className="linkMenu" onClick={() => signOut({callbackUrl: "/"})}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
+                         stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                              d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/>
                     </svg>
                     <span className="spanMenu">Logout</span>
                 </button>
             </div>
-            <div className="flex flex-1 lg:hidden"></div>
+            <div className="flex flex-1 lg:hidden" onClick={handleOpenMenu}></div>
         </aside>
     )
 }
-export default Header
+export default Menu

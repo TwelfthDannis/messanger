@@ -6,11 +6,17 @@
     @apply block mb-2 text-sm font-medium text-gray-300
 }
 .InputSign{
-    @apply shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-zinc-800 border-gray-600 text-gray-300 focus-visible:outline-violet-800
+    @apply shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-zinc-800 border-gray-600 text-gray-300
 }
 .InputPassword{
-    @apply shadow-sm border text-sm rounded-lg block w-full pr-10 p-2.5 bg-zinc-800 border-gray-600 text-gray-300 focus-visible:outline-violet-800
+    @apply shadow-sm border text-sm rounded-lg block w-full pr-10 p-2.5 bg-zinc-800 border-gray-600 text-gray-300
 }
 .btnSubmitSign{
-    @apply text-gray-300 bg-zinc-800 hover:bg-zinc-900 hover:text-violet-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center
+    @apply text-gray-300 bg-violet-700 hover:bg-violet-950 transition-all duration-300
+}
+.LinkAuth{
+    @apply text-gray-300 bg-zinc-800 hover:bg-zinc-900 hover:text-violet-600 transition-all duration-300
+}
+.GeneralAuthLink{
+    @apply px-5 py-2.5 text-sm text-center rounded-lg font-medium
 }

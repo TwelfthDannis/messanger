@@ -5,7 +5,7 @@ import {hash} from "bcrypt";
 
 export async function POST(req){
     const handleUserExists = async (field, value, message) => {
-        const existingUser = await prisma.user.findFirst({
+        const existingUser = await prisma.user.findUnique({
             where: { [field]: value }
         });
 

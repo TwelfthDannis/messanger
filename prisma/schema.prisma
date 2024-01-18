@@ -20,28 +20,12 @@ model User {
 
   seenMessages Message[] @relation("Seen")
 
-  accounts Account[]
   messages Message[]
 }
 
 enum Role {
   USER
   ADMIN
-}
-
-model Account {
-  id            Int     @id @default(autoincrement())
-  userId        Int
-  type          String
-  refresh_token String?
-  access_token  String?
-  expires_at    Int?
-  token_type    String?
-  scope         String?
-  id_token      String?
-  session_state String?
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Conversation {
