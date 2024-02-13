@@ -1,30 +1,16 @@
 "use client"
 import "@/app/style/sign.css"
-import axios from "axios";
 import {useState} from "react";
+import axios from "axios";
 import {useRouter} from "next/navigation";
 
 
 export default function Page() {
-    const router = useRouter();
-
-    const [data, setData] = useState({
-        email: "",
-        username: "",
-        password: "",
-    })
 
     const [showPassword, setShowPassword] = useState({
         password: false,
         repeatPassword: false
     })
-
-    const handleData = (e) => {
-        setData((prev) => ({
-            ...prev,
-            [e.target.name]: e.target.value,
-        }))
-    }
 
     const ButtonEye = ({field}) => {
         const handleShowPassword = (field) => {
@@ -54,17 +40,28 @@ export default function Page() {
     };
 
 
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        const response = await axios.post("/api/auth/register", data, {
-            headers: {
-                "Content-Type": "application/json"
+    const router=useRouter();
+    const handleSubmit= async(e)=>{
+        e.preventDefault();
+        const data={
+            email: e.target.email.value,
+            username: e.target.username.value,
+            password: e.target.password.value
+        }
+        try {
+            const res=await axios.post("/api/auth/reg", data, {
+                headers: {
+                    "content-type": "application/json"
+                }
+            })
+            if(res.status===200){
+                router.push("/log")
             }
-        });
-        if (response.status === 201) {
-            router.push("/log")
+        }catch (error){
+            console.log(error)
         }
     }
+
 
     return (
         <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
@@ -76,7 +73,6 @@ export default function Page() {
                        name="email"
                        className="InputSign"
                        placeholder="Email address"
-                       onChange={handleData}
                        required/>
             </div>
             <div className="mb-5">
@@ -85,7 +81,6 @@ export default function Page() {
                        name="username"
                        className="InputSign"
                        placeholder="Nickname"
-                       onChange={handleData}
                        required/>
             </div>
             <div className="mb-5">
@@ -96,7 +91,6 @@ export default function Page() {
                            autoComplete="new Password"
                            className="InputPassword"
                            placeholder="Password"
-                           onChange={handleData}
                            required/>
                     <ButtonEye field={"password"}/>
                 </div>

@@ -5,22 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/app/lib/openMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/addChats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/chatItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/searchChat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/searchUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/menuItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/menuProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/loading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/downPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/messageBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/upperPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getConversationId.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getCoversation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getCurrentUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getMessages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getSearchUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getSession.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/action/getUsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/auth/reg/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/chat/searchUser/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/conversation/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/lib/provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/lib/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab2b5f4-91c6-4bca-991f-a11c433a0b13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab2b5f4-91c6-4bca-991f-a11c433a0b13/storage_v2/_src_/database/bzge46wlzxqysn2uwn7l.vZDVGw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab2b5f4-91c6-4bca-991f-a11c433a0b13/storage_v2/_src_/database/bzge46wlzxqysn2uwn7l.vZDVGw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab2b5f4-91c6-4bca-991f-a11c433a0b13/storage_v2/_src_/database/bzge46wlzxqysn2uwn7l.vZDVGw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab2b5f4-91c6-4bca-991f-a11c433a0b13/storage_v2/_src_/database/bzge46wlzxqysn2uwn7l.vZDVGw/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab2b5f4-91c6-4bca-991f-a11c433a0b13/storage_v2/_src_/database/bzge46wlzxqysn2uwn7l.vZDVGw/schema/public.abK9xQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/listChat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/listChat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/listChat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/messages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/messages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/searchChat.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/log/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/log/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/reg/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/reg/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/auth/register/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/register/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/register/route.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/providers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/providers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/openMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/openMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/providers.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/style/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/style/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/sign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,43 +118,43 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "deploy",
-    "last_opened_file_path": "C:/Users/danya/Desktop/job/messanger",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.sourceCode.CSS",
-    "ts.external.directory.path": "C:\\Users\\danya\\Desktop\\job\\messanger\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;deploy&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danya/Desktop/job/messanger&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\danya\\Desktop\\job\\messanger\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
       <recent name="C:\Users\danya\Desktop\job\messanger\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\(pages)\chat" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\(pages)" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\style" />
       <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\api" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\Components\ChatComponents" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\Components\MenuComponents" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,7 +172,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-c44b541a36ca-JavaScript-WS-233.13135.92" />
+        <option value="bundled-js-predefined-1d06a55b98c1-985749b364ce-JavaScript-WS-233.14015.89" />
       </set>
     </attachedChunks>
   </component>
@@ -178,7 +215,23 @@
       <workItem from="1705412770244" duration="3607000" />
       <workItem from="1705476273509" duration="11000" />
       <workItem from="1705506601604" duration="28237000" />
-      <workItem from="1705571549584" duration="32087000" />
+      <workItem from="1705571549584" duration="33335000" />
+      <workItem from="1705630560958" duration="8351000" />
+      <workItem from="1705667819622" duration="27649000" />
+      <workItem from="1705748634975" duration="154000" />
+      <workItem from="1705971889428" duration="50000" />
+      <workItem from="1707217958159" duration="3716000" />
+      <workItem from="1707221847638" duration="16131000" />
+      <workItem from="1707304786570" duration="184000" />
+      <workItem from="1707304997507" duration="159000" />
+      <workItem from="1707305181568" duration="2012000" />
+      <workItem from="1707380706136" duration="31518000" />
+      <workItem from="1707458559131" duration="39386000" />
+      <workItem from="1707509937970" duration="2060000" />
+      <workItem from="1707551188112" duration="6825000" />
+      <workItem from="1707614917450" duration="660000" />
+      <workItem from="1707627379852" duration="64606000" />
+      <workItem from="1707803160923" duration="7731000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -276,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705528747520</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1705614438454</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705614438454</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
