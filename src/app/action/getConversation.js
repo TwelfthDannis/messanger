@@ -5,7 +5,7 @@ const getMessages=async()=>{
     const currentUser= await getCurrentUser()
     if(!currentUser.id)return null;
     try {
-        const converstion=await prisma.conversation.findMany({
+        const conversation=await prisma.conversation.findMany({
             orderBy:{
                 lastMessageAt:"desc"
             },
@@ -24,8 +24,7 @@ const getMessages=async()=>{
                 }
             }
         })
-        console.log(converstion)
-        return converstion
+        return conversation
     }catch(err) {
         return [];
     }

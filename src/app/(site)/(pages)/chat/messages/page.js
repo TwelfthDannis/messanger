@@ -3,14 +3,13 @@ import UpperPanel from "@/app/(site)/Components/messageComponents/upperPanel";
 import MessageBox from "@/app/(site)/Components/messageComponents/messageBox";
 import DownPanel from "@/app/(site)/Components/messageComponents/downPanel";
 
-export default function Page({getChat}) {
-
+export default function Page() {
     return (
         <div className="lg:relative w-full">
             <div
                 className="overflow-hidden flex flex-col h-dvh lg:h-full lg:bg-zinc-950 lg:bg-opacity-60 lg:rounded-xl">
                 <div className="border-b border-zinc-800 h-14 bg-zinc-950 flex py-2 items-center rounded-t-xl">
-                    <UpperPanel getChat={getChat}/>
+                    <UpperPanel/>
                     <button className="p-2 m-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                              stroke="currentColor" className="w-6 h-6 text-gray-300 ">
@@ -21,7 +20,7 @@ export default function Page({getChat}) {
                 </div>
                 <MessageBox/>
                 <div>
-                    <DownPanel getChat={getChat}/>
+                    <DownPanel/>
                 </div>
             </div>
         </div>

@@ -1,9 +1,18 @@
+"use client"
+import {useRef} from "react";
 
-export default function SearchChat({querySearch}) {
-    const search=(e)=>{
-        querySearch(e.target.value)
-    }
-    
+export default function SearchChat({setSearchUsers}) {
+
+    const timeRef = useRef(null)
+    const search = (e) => {
+        if (e.target.value) {
+            clearTimeout(timeRef.current);
+            timeRef.current = setTimeout(() => {
+                setSearchUsers (e.target.value);
+            }, 1000);
+        }
+    };
+
     return (
         <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -13,14 +22,7 @@ export default function SearchChat({querySearch}) {
                           d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
             </div>
-            <input
-                type="search"
-                id="default-search"
-                className="bg-zinc-800 block w-full p-4 ps-10 text-sm text-gray-300 border-0 rounded-lg focus-visible:outline-0 focus:ring-blue-300 focus:border-blue-500 lg:bg-zinc-950"
-                placeholder="Search"
-                onChange={search}
-            />
+            <input type="search" id="default-search" className="bg-zinc-800 block w-full p-4 ps-10 text-sm text-gray-300 border-0 rounded-lg focus-visible:outline-0 focus:ring-blue-300 focus:border-blue-500 lg:bg-zinc-950" placeholder="Search" onClick={search}/>
         </div>
     )
 }
-

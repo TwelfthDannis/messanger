@@ -1,23 +1,17 @@
-import {getServerSession} from "next-auth";
-import {authOptions} from "@/app/api/auth/[...nextauth]/route";
+"use server"
 import {prisma} from "@/app/lib/db";
 
-export const geSearchUser=async()=>{
-    const session = await getServerSession(authOptions)
-    if (!session) return [];
+const getSearchUser = async(req)=>{
     try {
         return await prisma.user.findMany({
-            where: {
-                NOT: {
-                    email: session.user.email
-                },
+            where:{
                 username:{
-                    startsWith:"q"
+                    startsWith:req
                 }
             }
-        });
-    }catch (err) {
+        })
+    }catch(err) {
         return [];
     }
 }
-export default geSearchUser;
+export default getSearchUser;

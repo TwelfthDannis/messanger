@@ -1,17 +1,15 @@
+"use client"
 import axios from "axios";
-import {useState} from "react";
 
+export default function downPanel(){
 
-const downPanel=({getChat})=>{
-    const [sendText,setSendText]=useState()
-
-    function handleSendMessage(){
-        setSendText(document.getElementById("chat").value);
-        sendMessage()
-    }
-
-    const sendMessage = async () => {
-        const response = await axios.post("/api/conversation", {...getChat})
+    const handleSendMessage=async()=>{
+        const message = document.getElementById("chat").value
+        if(message){
+            const image = ""
+            const conversationIds = ""
+            const response = await axios.post("/api/messages",{message,image,conversationIds})
+        }
     }
 
     return (
@@ -40,4 +38,3 @@ const downPanel=({getChat})=>{
         </div>
     )
 }
-export default downPanel

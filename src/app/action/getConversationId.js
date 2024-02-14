@@ -18,3 +18,4 @@ const getConversationId=async(conversationId)=>{
         return null
     }
 }
+export default getConversationId
