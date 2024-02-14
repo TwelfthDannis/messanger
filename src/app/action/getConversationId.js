@@ -1,7 +1,6 @@
 import getCurrentUser from "@/app/action/getCurrentUser";
 import {prisma} from "@/app/lib/db";
 
-
 const getConversationId=async(conversationId)=>{
     try {
         const currentUser=await getCurrentUser();

@@ -10,11 +10,13 @@ import getConversationId from "@/app/action/getConversationId";
 
 export default async function Layout({children}) {
     const chats= await getConversation()
-    const conversation=chats.map(item=>item.id);
+    const conversation=chats?.map(item=>item.id);
     const setChat=[]
-    for (const id of conversation) {
-        const res = await getConversationId(id);
-        setChat.push(res)
+    if (Array.isArray(conversation)) {
+        for (const id of conversation) {
+            const res = await getConversationId(id);
+            setChat.push(res)
+        }
     }
 
     return (

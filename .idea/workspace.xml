@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="global update">
-      <change afterPath="$PROJECT_DIR$/src/app/lib/authOptions.js" afterDir="false" />
+    <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="fix authOptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/(pages)/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/action/getConversation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getConversation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/action/getConversationId.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getConversationId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/action/getSession.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getSession.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/action/getUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getUsers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/authOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/authOptions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +186,7 @@
       <workItem from="1707551188112" duration="6825000" />
       <workItem from="1707614917450" duration="660000" />
       <workItem from="1707627379852" duration="64606000" />
-      <workItem from="1707803160923" duration="57278000" />
+      <workItem from="1707803160923" duration="58710000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -303,7 +308,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707875131812</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix authOptions">
+      <option name="closed" value="true" />
+      <created>1707877783636</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707877783636</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix authOptions">
+      <option name="closed" value="true" />
+      <created>1707878563796</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707878563796</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +345,7 @@
     <MESSAGE value="Commit" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="global update" />
-    <option name="LAST_COMMIT_MESSAGE" value="global update" />
+    <MESSAGE value="fix authOptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix authOptions" />
   </component>
 </project>

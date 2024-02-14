@@ -3,28 +3,27 @@ import getCurrentUser from "@/app/action/getCurrentUser";
 
 const getMessages=async()=>{
     const currentUser= await getCurrentUser()
-    if(!currentUser.id)return null;
+    if(!currentUser?.id)return null;
     try {
-        const conversation=await prisma.conversation.findMany({
-            orderBy:{
-                lastMessageAt:"desc"
+        return await prisma.conversation.findMany({
+            orderBy: {
+                lastMessageAt: "desc"
             },
-            where:{
-              userIds:{
-                  has:currentUser.id
-              }
+            where: {
+                userIds: {
+                    has: currentUser.id
+                }
             },
-            include:{
-                users:true,
-                messages:{
-                    include:{
-                        seen:true,
-                        sender:true
+            include: {
+                users: true,
+                messages: {
+                    include: {
+                        seen: true,
+                        sender: true
                     }
                 }
             }
         })
-        return conversation
     }catch(err) {
         return [];
     }
