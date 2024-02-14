@@ -2,7 +2,7 @@
 import {getServerSession} from "next-auth";
 import {prisma} from "@/app/lib/db";
 import {authOptions} from "@/app/lib/authOptions";
-export const getUsers=async()=>{
+const getUsers=async()=>{
     const session = await getServerSession(authOptions)
     if (!session) return [];
     try {

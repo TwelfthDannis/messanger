@@ -7,7 +7,6 @@ import {useState} from "react";
 export default function Page({conversation}) {
     const [searchUsers, setSearchUsers] = useState("")
 
-
     return (
         <div className="flex flex-col flex-1 overflow-hidden">
             <SearchChat setSearchUsers={setSearchUsers}/>
