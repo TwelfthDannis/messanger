@@ -1,6 +1,6 @@
 
 
-export default function Header(){
+export default function BurgerMenu(){
 
     return (
         <div className="lg:hidden bg-zinc-950 mb-4">

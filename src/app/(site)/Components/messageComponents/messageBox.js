@@ -1,10 +1,7 @@
-
 import Image from "next/image";
 import avatar from "../../../../../public/no-avatar.jpg";
 
 const messageBox=()=>{
-
-
     return (
         <ul className="space-y-2 px-4 flex flex-1 flex-col text-violet-600 overflow-hidden overflow-y-auto py-3 scroll-smooth">
             <li className="flex items-start w-full">

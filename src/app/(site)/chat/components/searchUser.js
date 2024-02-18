@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import avatarImage from "@/../public/no-avatar.jpg"
+import avatarImage from "../../../../../public/no-avatar.jpg"
 
 export const searchUser=()=> {
 
