@@ -1,13 +1,17 @@
 import getCurrentUser from "@/app/action/getCurrentUser";
 import {prisma} from "@/app/lib/db";
 import {NextResponse} from "next/server";
+import getConversationId from "@/app/action/getConversationId";
 
 
 export async function POST(request){
     try {
-        const body = await request.json()
-        const {message,image,conversationId} = body
+        const {message,image,conversationId} = await request.json()
         const currentUser= await getCurrentUser()
+        const conversation = await getConversationId(conversationId)
+        if(conversation===null){
+
+        }
 
         const newMessage = await prisma.message.create({
             include: {

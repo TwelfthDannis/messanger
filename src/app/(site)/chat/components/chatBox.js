@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import avatarImage from "../../../../../public/no-avatar.jpg";
-import useOtherUser from "@/app/(site)/hooks/useOtherUser";
+import useOtherUser from "@/app/hooks/useOtherUser";
 import {useRouter} from "next/navigation";
 import {useCallback} from "react";
 import formatAMPM from "@/app/lib/formatAMPM";
@@ -10,6 +10,7 @@ import formatAMPM from "@/app/lib/formatAMPM";
 const ChatBox=({data})=>{
     const otherUser = useOtherUser(data)
     const router = useRouter()
+    const message=data.messages[data.messages.length - 1]
 
     const handleClick=useCallback(()=>{
         router.push(`/chat/${data.id}`)
@@ -24,12 +25,12 @@ const ChatBox=({data})=>{
                 <div className="flex-1 grid grid-rows-2 gap-1">
                     <span className="block font-bold">{data.name || otherUser.username}</span>
                     <div className="flex text-sm items-center overflow-hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0  0  24  24"
+                        {message?.seen.length>1?<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0  0  24  24"
                              strokeWidth="2" stroke="currentColor"
                              className="min-w-4 h-4 block text-violet-600 mr-1.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5  12.75  6  6  9-13.5"/>
-                        </svg>
-                        <span className="truncate text-gray-300">Message</span>
+                        </svg>:""}
+                        <span className="truncate text-gray-300">{message?.body || ""}</span>
                     </div>
                 </div>
                 <div className="mb-auto text-zinc-500 right-0 whitespace-nowrap">{formatAMPM(data.lastMessageAt)}</div>

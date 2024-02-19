@@ -1,19 +1,11 @@
 "use client"
-import {useEffect, useState} from "react";
-import {useRouter} from "next/navigation";
-import {useDebounce} from "use-debounce";
+import {useDebouncedCallback} from "use-debounce";
 
-export default function SearchInput() {
-    const router= useRouter()
-    const [search,setSearch]= useState()
-    const [querySearch]=useDebounce(search,1000)
-    useEffect(() => {
-        if(querySearch){
-            router.push(`/chat?search=${search}`)
-        }else{
-            router.push(`/chat`)
-        }
-    }, [querySearch,router]);
+export default function SearchInput({search}) {
+    const handleInput = useDebouncedCallback(
+        (value) => {
+            search(value)
+        }, 1500)
 
     return (
         <div className="relative order-first">
@@ -24,7 +16,10 @@ export default function SearchInput() {
                           d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
             </div>
-            <input type="search" id="default-search" className="bg-zinc-800 block w-full p-4 ps-10 text-sm text-gray-300 border-0 rounded-lg focus-visible:outline-0 focus:ring-blue-300 focus:border-blue-500 lg:bg-zinc-950" placeholder="Search" onChange={(e)=>setSearch(e.target.value)}/>
+            <input type="search" id="default-search"
+                   className="bg-zinc-800 block w-full p-4 ps-10 text-sm text-gray-300 border-0 rounded-lg focus-visible:outline-0 focus:ring-blue-300 focus:border-blue-500 lg:bg-zinc-950"
+                   placeholder="Search"
+                   onChange={(e) => handleInput(e.target.value)}/>
         </div>
     )
 }

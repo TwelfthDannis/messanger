@@ -2,7 +2,7 @@
 
 import {useForm} from "react-hook-form";
 import axios from "axios";
-import useConversation from "@/app/(site)/hooks/useConversation";
+import useConversation from "@/app/hooks/useConversation";
 
 const downPanel = () => {
     const {conversationId}=useConversation()
@@ -12,7 +12,6 @@ const downPanel = () => {
             message: ''
         }
     });
-
 
     const onSubmit = data => {
         document.getElementById("message").value=""

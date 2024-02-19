@@ -1,19 +1,26 @@
 "use client"
-import {useMemo, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import {useSession} from "next-auth/react";
 import ChatBox from "@/app/(site)/chat/components/chatBox";
 
 
-const ChatList = ({conversation, user}) => {
+const ChatList = ({conversation, user, search}) => {
 
     const [items, setItems] = useState(conversation)
-    const sessions = useSession()
-
-
-    const pusherKey = useMemo(() => {
-        return sessions.data?.user?.email
-    }, [sessions.data?.user?.email])
-
+    const {data:sessions} = useSession()
+    useEffect(() => {
+        if (search) {
+            const filteredItems = conversation.filter(item => {
+                if(item.name===null){
+                    return item.users.some(user => user.username.toLowerCase().startsWith(search.toLowerCase()) && user.username!==sessions?.user.name);
+                }
+                return item?.name.toLowerCase().startsWith(search.toLowerCase())
+            });
+            setItems(filteredItems);
+        }else{
+            setItems(conversation)
+        }
+    }, [conversation, search]);
 
     return (
         <ul className="rounded-xl text-gray-300 space-y-2 overflow-y-auto scroll-smooth">
