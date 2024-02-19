@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Global update">
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/messageList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/upperPanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/chatBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/hooks/useActive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/hooks/useConversation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/hooks/useOtherUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/Desktop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/formatAMPM.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/pusher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/api/pusher/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/NotSelected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/NotSelected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/matchComponents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/downPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/downPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/messageBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/messageBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/upperPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/chat/components/chatList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/chatList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/chat/components/searchUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/searchUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/log/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/log/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/messages/page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/reg/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reg/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/widget/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/widgetId/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getConversation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getConversation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/messages/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/messages/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/style/messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/messages.css" afterDir="false" />
-    </list>
+    <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Global update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +179,7 @@
       <workItem from="1707627379852" duration="64606000" />
       <workItem from="1707803160923" duration="72270000" />
       <workItem from="1708230469840" duration="5142000" />
-      <workItem from="1708235690624" duration="38405000" />
+      <workItem from="1708235690624" duration="38641000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -366,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708240683102</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Global update">
+      <option name="closed" value="true" />
+      <created>1708330954306</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708330954306</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
