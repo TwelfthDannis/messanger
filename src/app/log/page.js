@@ -53,7 +53,7 @@ const ButtonEye = () => {
 
 return (
     <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
-        <a href="/">
+        <a href="/public">
             <h1 className="font-bold text-4xl text-center p-4 text-gray-300 w-60">ty~Chat</h1>
         </a>
         <div className="mb-5">

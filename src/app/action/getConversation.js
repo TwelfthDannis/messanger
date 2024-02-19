@@ -1,7 +1,7 @@
 import {prisma} from "@/app/lib/db";
 import getCurrentUser from "@/app/action/getCurrentUser";
 
-const getMessages=async()=>{
+const getConversation=async()=>{
     const currentUser= await getCurrentUser()
     if(!currentUser?.id)return null;
     try {
@@ -28,4 +28,4 @@ const getMessages=async()=>{
         return [];
     }
 }
-export default getMessages;
+export default getConversation;

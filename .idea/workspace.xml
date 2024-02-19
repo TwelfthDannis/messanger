@@ -4,53 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="fix authOptions">
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/Components/matchComponents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/chatList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(site)/menu/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/messanger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/messanger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="eb6938e9-9794-4c72-9bd1-94db2bea317c" name="Changes" comment="Global update">
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/messageList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/upperPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/chatBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/chat/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/hooks/useActive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/hooks/useConversation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(site)/hooks/useOtherUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/Desktop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/lib/formatAMPM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/lib/pusher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/api/pusher/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/messages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/messages/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/(pages)/widget/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/widget/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/addChats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/addChats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/chatItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/searchChat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/ChatComponents/searchUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/searchUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/menu/components/burgerMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/menu/components/logout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/menuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/menu/components/menuItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/MenuComponents/menuProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/menu/components/menuProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/NotSelected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/NotSelected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/downPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/downPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/messageBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/messageBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/upperPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/upperPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/log/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/log/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/reg/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/reg/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/NotSelected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/NotSelected.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/matchComponents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/downPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/downPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/messageBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/[messagesId]/components/messageBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/Components/messageComponents/upperPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/chat/components/chatList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/chatList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/chat/components/searchUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/components/searchUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/log/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/log/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/messages/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/reg/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reg/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/widget/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/chat/widgetId/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/action/getConversation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getConversation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getConversationId.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getConversationId.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getCurrentUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getCurrentUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getMessages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getMessages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getSearchUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getSearchUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getSession.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getSession.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/action/getUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/action/getUsers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/auth/reg/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/reg/route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/api/messages/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/messages/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/authOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/authOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/db.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/style/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/menu/style/menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/style/messages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/messages.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/style/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/style/sign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,11 +129,11 @@
       <recent name="C:\Users\danya\Desktop\job\messanger\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\menu\style" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\menu\components" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\menu" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\chat\components" />
-      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\chat\[messagesId]" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\chat\@widgetId" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\chat\@messagesId" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app\(site)\chat" />
+      <recent name="C:\Users\danya\Desktop\job\messanger\src\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -226,7 +212,7 @@
       <workItem from="1707627379852" duration="64606000" />
       <workItem from="1707803160923" duration="72270000" />
       <workItem from="1708230469840" duration="5142000" />
-      <workItem from="1708235690624" duration="4893000" />
+      <workItem from="1708235690624" duration="38405000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -372,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707879331397</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Rebuild">
+      <option name="closed" value="true" />
+      <created>1708240683102</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708240683102</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +388,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="global update" />
     <MESSAGE value="fix authOptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix authOptions" />
+    <MESSAGE value="Rebuild" />
+    <MESSAGE value="Global update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Global update" />
   </component>
 </project>

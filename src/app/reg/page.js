@@ -65,7 +65,7 @@ export default function Page() {
 
     return (
         <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
-            <a href="/"><h1 className="font-bold text-4xl text-center p-4 text-gray-300 w-60">ty~Chat</h1>
+            <a href="/public"><h1 className="font-bold text-4xl text-center p-4 text-gray-300 w-60">ty~Chat</h1>
             </a>
             <div className="mb-5">
                 <label htmlFor="email" className="LabelInput">Email</label>
