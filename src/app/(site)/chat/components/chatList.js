@@ -2,12 +2,16 @@
 import {useEffect, useMemo, useState} from "react";
 import {useSession} from "next-auth/react";
 import ChatBox from "@/app/(site)/chat/components/chatBox";
+import useConversation from "@/app/hooks/useConversation";
+import axios from "axios";
 
 
 const ChatList = ({conversation, user, search}) => {
 
     const [items, setItems] = useState(conversation)
     const {data:sessions} = useSession()
+
+
     useEffect(() => {
         if (search) {
             const filteredItems = conversation.filter(item => {

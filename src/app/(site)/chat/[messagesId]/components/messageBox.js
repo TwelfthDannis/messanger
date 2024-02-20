@@ -13,10 +13,9 @@ const messageBox = ({data}) => {
                 <Image className="h-6 w-6 object-cover rounded-full" src={avatar}
                        alt={"avatar"}/>
                 <div className="overflow-hidden break-words bg-zinc-900 p-2 rounded-xl text-md">
-                    <div
-                        className={`flex ${session?.user?.name === data.sender.username ? "flex-row-reverse" : ""} justify-between gap-2 text-xs`}>
-                        <span>{data.sender.username}</span>
-                        <span>{formatAMPM(data.createdAt)}</span>
+                    <div className={`flex ${session?.user?.name === data.sender.username ? "flex-row-reverse" : ""} justify-between items-center gap-2`}>
+                        <span className={"text-sm"}>{data.sender.username}</span>
+                        <span className={"text-xs"}>{formatAMPM(data.createdAt)}</span>
                     </div>
                     <span>{data.body}</span>
                 </div>
